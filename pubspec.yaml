@@ -1,0 +1,39 @@
+name: flutter_sms_otp_pro
+description: "Enterprise-grade Flutter SMS OTP library with auto-read capabilities, beautiful UI components, and comprehensive platform support."
+version: 1.0.0
+homepage: https://sitharaj.in
+repository: https://github.com/sitharaj88/flutter_sms_otp_pro
+issue_tracker: https://github.com/sitharaj88/flutter_sms_otp_pro/issues
+
+topics:
+  - otp
+  - sms
+  - authentication
+  - verification
+  - phone
+
+environment:
+  sdk: ^3.3.0
+  flutter: '>=3.19.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.7
+
+dev_dependencies:
+  integration_test:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  mocktail: ^1.0.4
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: in.sitharaj.sms_otp
+        pluginClass: SmsOtpPlugin
+      ios:
+        pluginClass: SmsOtpPlugin
